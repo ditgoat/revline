@@ -60,6 +60,9 @@ export default function AuthScreen() {
             >
               {loading ? "SENDING..." : "SEND SIGN-IN LINK"}
             </button>
+            <p className="mt-6 text-center break-all" style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 9, color: "#5a5d63" }}>
+              DEBUG URL: {String(import.meta.env.VITE_SUPABASE_URL)}
+            </p>
           </>
         )}
       </div>
